@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin/User Login</title>
+    <link rel="icon" type="image/png" href="../images/cup-of-coffee.png" width="100" height="auto">
+    <link rel="stylesheet" href="../css/teashop.css">
+
+    <style>
+        /* Body style (Indha background thaan main attraction) */
+        body 
+        {
+            background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), 
+                        url('https://images.unsplash.com/photo-1594631252845-29fc4586c55c?q=80&w=1974&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Georgia', serif;
+        }
+    </style>
+    
+</head>
+<body>
+            
+    <div class="login-container">
+        <img src="../images/TeaShop_Logo.png" alt="Iraivi Logo" style="width: 80px; margin-bottom: 10px;">
+        <h2 id="loginTitle">Iraivi Login</h2>
+        
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit" class="btn-login">Login</button>
+        </form>
+
+        <div style="margin-top: 20px; font-size: 14px; color: #5d4037;">
+            Don't have an account? 
+            <a href="register.html" style="color: #8b4513; font-weight: bold; text-decoration: none;">Register Now</a>
+        </div>
+
+        <a href="../index.html" class="back-link">⬅ Back to Home</a>
+        <p id="msg" style="color: #e74c3c; font-weight: bold; margin-top: 15px;"></p>
+    </div>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>

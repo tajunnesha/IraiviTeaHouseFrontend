@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+        <link rel="icon" type="image/png" href="../images/cup-of-coffee.png" width="100" height="auto">
+        <link rel="stylesheet" href="../css/teashop.css">
+</head>
+<body>
+
+    <div id="orderGuard">
+        <img src="../images/TeaShop_Logo.png" width="110px" style="margin-bottom: 15px;">
+        <h2>Order Your Favorites! 🛍️</h2>
+        <p>Please log in to place orders and view your cart.</p>
+        <div style="display: flex; gap: 15px;">
+            <a href="login.html" class="btn-login" >Login Now</a>
+        </div>
+    </div>
+     
+    <header>
+        <div>
+            <img src="../images/TeaShop_Logo.png" alt="" style="position: relative;
+            bottom: 10px; left:40px;">
+            <h2 style="position: relative; bottom: 15px;">Iraivi </h2>
+            <h4 style="position: relative; top: 10px; left: -70px;">Tea House</h4>
+            
+        </div>
+    <nav>
+        <a id="one" href="../index.html">Home</a>
+        <a id="one" href= "about.html">About Us</a>
+        <a id="one" href="menu.html">Menu</a>
+        <a class="orderStyle" id="one" href="orders.html">Orders</a>
+
+        <button><a href="hiring.html">Hiring</a></button>
+       
+    </nav>
+    </header>
+
+
+    <section id="orders">
+        <div class="order-container">
+            <h2>Your Order Summary</h2>
+                        
+            <table class="order-table">
+                <thead>
+                    <tr>
+                        <th align="left">Item Name</th>
+                        <th align="center">Quantity</th>
+                        <th align="right">Price (₹)</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items-body">
+                    </tbody>
+                <tfoot>
+                    <tr class="total-row">
+                        <td colspan="2"><strong>Grand Total</strong></td>
+                        <td align="right"><strong>₹<span id="grand-total">0</span></strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <button class="confirm-btn" id="confirmBtn">Confirm Order</button>
+            <div id="orderStatus" style="margin-top: 15px; font-weight: bold; text-align: center;"></div>
+        </div>
+
+    <div class="back-menu-strip order-back">
+        <button class="backButton order-back-btn" onclick="window.location.href='menu.html'">
+            Back to Menu
+        </button>
+    </div>
+
+</section>
+
+
+ <footer>
+  <div class="footer">
+    <div class="footerAbout">
+      <h3><img src="../images/TeaShop_Logo.png" alt="Iraivi Tea House"> </h3>
+      <p>Freshly brewed happiness, everyday!</p>
+    </div>
+    <div class="footeContact">
+      <h4>Contact Us</h4>
+      <p>📍 Madurai, Tamil Nadu</p>
+      <p>📞 +91 93454 .....</p>
+      <p>✉️ iraivi@gmail.com</p>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Twitter</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Iraivi Tea House. All rights reserved.</p>
+  </div>
+</footer>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/orders.js"></script>
+</body>
+</html>
+
+

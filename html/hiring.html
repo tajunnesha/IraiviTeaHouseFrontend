@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiringForm</title>
+    <link rel="icon" type="image/png" href="../images/cup-of-coffee.png" width="100" height="auto">
+    <link rel="stylesheet" href="../css/teashop.css">
+
+    
+</head>
+<body>
+<header>
+
+        <div>
+            <img src="../images/TeaShop_Logo.png" alt="" style="position: relative;
+            bottom: 10px; left:40px;">
+            <h2 style="position: relative; bottom: 15px;">Iraivi </h2>
+            <h4 style="position: relative; top: 10px; left: -70px;">Tea House</h4>
+            
+        </div>
+
+    <nav>
+        <a id="one" href="../index.html">Home</a>
+        <a id="one" href="about.html">About Us</a>
+        <a id="one" href="menu.html">Menu</a>
+        <a id="one" href="orders.html">Orders</a>
+
+        <button class="hiringBtn"><a  href="hiring.html">Hiring</a></button>
+       
+    </nav>
+    </header>
+
+<section id="hiringForm">
+    <div class="hiringTitle">
+        <span> ༺━━━━━━━━ Join Our Team at Iraivi ━━━━━━━━━༻</span>
+    </div>
+
+    <div class="form">
+        <form>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <select id="position" required>
+                <option value="" disabled selected>Select Position</option>
+                <option value="master">Tea Master</option>
+                <option value="billing">Billing/Counter</option>
+                <option value="service">Service/Cleaning</option>
+            </select>
+            <textarea id="experience" placeholder="Tell us about your experience (optional)"></textarea>
+            <button class="submitBtn" type="button" onclick="submitForm()">Submit Application</button>
+            <div id="messageBox" style="margin-top: 15px; font-weight: bold; min-height: 20px;"></div>
+        </form>
+    </div>
+</section>
+
+    <script src="hiring.js"></script>
+
+
+<footer>
+  <div class="footer">
+    <div class="footerAbout">
+      <h3><img src="../images/TeaShop_Logo.png" alt="Iraivi Tea House"> </h3>
+      <p>Freshly brewed happiness, everyday!</p>
+    </div>
+    <div class="footeContact">
+      <h4>Contact Us</h4>
+      <p>📍 Madurai, Tamil Nadu</p>
+      <p>📞 +91 93454 .....</p>
+      <p>✉️ iraivi@gmail.com</p>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Twitter</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Iraivi Tea House. All rights reserved.</p>
+  </div>
+</footer>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/hiring.js"></script>
+
+</body>
+</html>

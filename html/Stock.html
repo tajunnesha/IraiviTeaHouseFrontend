@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iraivi Stock Management</title>
+    <link rel="stylesheet" href="../css/teashop.css">
+</head>
+<body style="background-color: darkolivegreen; color: #fcf8e3; font-family: Georgia, serif; text-align: center;">
+
+    <header>
+
+        <div>
+            <img src="../images/TeaShop_Logo.png" alt="" style="position: relative;
+            bottom: 10px; left:40px;">
+            <h2 style="position: relative; bottom: 15px;">Iraivi </h2>
+            <h4 style="position: relative; top: 10px; left: -70px;">Tea House</h4>
+            
+        </div>
+        <nav>
+            <a class="homeStyle" id="one" href="../index.html">Home</a>
+            <a id="one" href="about.html">About Us</a>
+            <a id="one" href="menu.html">Menu</a>
+            <a id="one" href="orders.html">Orders</a>
+            <button><a  href="hiring.html">Hiring</a></button>
+
+            <div class="user-access-container">
+                <div class="profile-icon">
+                    <i class="fas fa-user-circle" ></i>
+                </div>
+
+                <div class="dropdown-box">
+                    <div class="arrow-up"></div>
+                    <a href="Stock.html" class="dropdown-item">
+                        <i class="fas fa-user"></i> User Access
+                    </a>
+                    <a href="DailyAccount.html" class="dropdown-item">
+                        <i class="fas fa-user-shield"></i> Admin Access
+                    </a>
+                </div>
+            </div>
+        
+        </nav>
+
+    </header>
+<div class="stock-management-wrapper">
+    <h2>Iraivi Stock Management System</h2>
+
+    <div class="tab-buttons">
+        <button class="btn-action" onclick="switchTab('openingFormSection')">➕ Opening Stock Entry</button>
+        <button class="btn-action" onclick="switchTab('balanceSection')">📊 Stock & Sales Balance</button>
+    </div>
+
+    <div id="openingFormSection" class="stock-container tab-content active">
+        <h3 style="margin-top: 0;">Morning Stock Initialization</h3>
+        <form id="openingForm" onsubmit="saveOpeningStock(event)">
+            <table style="width: 100%; border-spacing: 0 12px;">
+                <tr>
+                    <td><label for="ingrSelect">Select Ingredient:</label></td>
+                    <td>
+                        <select id="ingrSelect" style="padding: 6px; width: 100%;" required>
+                            <option value="Tea Powder">Tea Powder</option>
+                            <option value="Milk">Milk</option>
+                            <option value="Sugar">Sugar</option>
+                            <option value="Biscuits">Butter Biscuit</option>
+                            <option value="Biscuits">Salt & Cumin Cookies</option>
+                            <option value="Biscuits">Chocolate Chips Cookies</option>
+                            <option value="Biscuits">Oats & Raisin Cookies</option>
+                            <option value="Biscuits">Coconut Cookies</option>
+                            <option value="Biscuits">Millet Cookies</option>
+                            <option value="Wheat">Wheat</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="openingQuantity">Opening Quantity (Kg/Ltr):</label></td>
+                    <td>
+                        <input type="number" id="openingQuantity" step="0.1" placeholder="Enter quantity" style="padding: 6px; width: 95%;" required>
+                    </td>
+                </tr>
+            </table>
+            <button type="submit" class="btn-action">Save Opening Stock</button>
+
+            <div id="statusMessage" style="margin-top: 10px; font-size: 14px; font-weight: bold;"></div>
+        </form>
+        
+        <div style="text-align:center; margin-top:20px;">
+            <button class="btn-action" onclick="finalizeOpeningStock()">Finalize Opening Stock</button>
+        </div>
+
+
+    </div>
+
+    <div id="balanceSection" class="stock-container tab-content">
+        <h3 style="margin-top: 0;">Stock Balance Sheet & Refill Alerts</h3>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+            <thead>
+                <tr style="border-bottom: 2px solid #8b4513;">
+                    <th style="padding: 8px;">Ingredient</th>
+                    <th style="padding: 8px;">Opening Stock</th>
+                    <th style="padding: 8px;">Remaining Balance</th>
+                    <th style="padding: 8px;">Status</th>
+                </tr>
+            </thead>
+            <tbody id="stockTableBody"></tbody>
+        </table>
+
+    </div>
+
+        <div style="text-align: center;">
+            <a href="../index.html" class="btn-back-home">
+                <span>⬅</span> Back to Home
+            </a>
+        </div>
+</div>
+
+<footer>
+  <div class="footer">
+    <div class="footerAbout">
+      <h3><img src="../images/TeaShop_Logo.png"Iraivi Tea House alt=""> </h3>
+      <p>Freshly brewed happiness, everyday!</p>
+    </div>
+    <div class="footeContact">
+      <h4>Contact Us</h4>
+      <p>📍 Madurai, Tamil Nadu</p>
+      <p>📞 +91 93454 .....</p>
+      <p>✉️ iraivi@gmail.com</p>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Twitter</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Iraivi Tea House. All rights reserved.</p>
+  </div>
+</footer>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/StockScript.js"></script>
+</body>
+</html>

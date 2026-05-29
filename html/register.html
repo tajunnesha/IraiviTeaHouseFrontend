@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iraivi - Join Us</title>
+    <link rel="stylesheet" href="../css/teashop.css">
+    <style>
+        /* Login page style-aye copy panni use pannikalam */
+        body {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1594631252845-29fc4586c55c?q=80&w=1974&auto=format&fit=crop');
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Georgia', serif;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="reg-container">
+    <img src="../images/TeaShop_Logo.png" width="70px">
+    <h2>Create Account</h2>
+    <form id="regForm">
+        <input type="text" id="regUser" placeholder="Full Name" required>
+        <input type="email" id="regEmail" placeholder="Email Address" required>
+        <input type="password" id="regPass" placeholder="Create Password" required>
+        <button type="submit" class="btn-login" style="width: 100%;">Register</button>
+
+        <p id="regMsg" style="margin-top: 15px; font-weight: bold; min-height: 20px;"></p>
+    </form>
+    <p>Already have an account? <a href="login.html" style="color: #8b4513;">Login here</a></p>
+</div>
+
+
+<script src="../js/config.js"></script>
+<script src="../js/register.js"></script>
+
+</body>
+</html>

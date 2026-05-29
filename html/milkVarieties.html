@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk Varieties</title>
+    <link rel="icon" type="image/png" href="../images/cup-of-coffee.png" width="100" height="auto">
+    <link rel="stylesheet" href="../css/teashop.css">
+
+    
+</head>
+<body>
+ 
+    <header>
+        <div>
+            <img src="../images/TeaShop_Logo.png" alt="" style="position: relative;
+            bottom: 10px; left:40px;">
+            <h2 style="position: relative; bottom: 15px;">Iraivi </h2>
+            <h4 style="position: relative; top: 10px; left: -70px;">Tea House</h4>
+            
+        </div>
+    <nav>
+        <a id="one" href="../index.html">Home</a>
+        <a id="one" href= "about.html">About Us</a>
+        <a id="one" class="menuStyle" href="menu.html">Menu</a>
+        <a id="one" href="orders.html">Orders</a>
+
+        <button><a href="hiring.html">Hiring</a></button>
+       
+    </nav>
+    </header>
+
+    <!-- section 5 -->
+ <section id="MilkVarieties">
+    <div class="milk">
+        <span>༺━━━━━━━━━ Milk Varieties ━━━━━━━━━༻</span>
+        <h2>Sip the freshness, gulp the joy</h3>
+        <a class="card" id="badam" href="#badam">
+              <img src="../images/badam 2.png" alt="badamMilk">
+              <h3>Hot Badam Milk</h3>
+              <h4>₹30</h4>
+         <div class="counter-container">
+            <button onclick="changeQty('badam-milk', 'Hot Badam Milk', 30, -1)">-</button>
+            <span class="quantity-count" id="badam-milk-count">0</span>
+            <button onclick="changeQty('badam-milk', 'Hot Badam Milk', 30, 1); updateOrder('Hot Badam Milk', 30, 1); addToCartAnimation(this);">+</button>
+          </div>       
+        </a>
+        <a class="card" id="rose" href="#rose">
+              <img src="../images/roseMilk 1.png" alt="RoseMilk">
+              <h3>Rose Milk</h3>
+              <h4>₹25</h4>
+          <div class="counter-container">
+            <button onclick="changeQty('rose-milk', 'Rose Milk', 25, -1)">-</button>
+            <span class="quantity-count" id="rose-milk-count">0</span>
+            <button onclick="changeQty('rose-milk', 'Rose Milk', 25, 1); updateOrder('Rose Milk', 25, 1); addToCartAnimation(this);">+</button>
+          </div>   
+        </a>
+        <a class="card" id="pista" href="#pista">
+              <img src="../images/pista 1.png" alt="PistaMilk">
+              <h3>Pista Milk</h3>
+              <h4>₹30</h4>
+         <div class="counter-container">
+            <button onclick="changeQty('pista-milk', 'Pista Milk', 30, -1)">-</button>
+            <span class="quantity-count" id="pista-milk-count">0</span>
+            <button onclick="changeQty('pista-milk', 'Pista Milk', 30, 1); updateOrder('Pista Milk', 30, 1); addToCartAnimation(this);">+</button>
+          </div>   
+        </a>
+        <a class="card" id="turmeric" href="#turmeric">
+              <img src="../images/turmeric.png" alt="TurmericMilk">
+              <h3>Turmeric Milk</h3>
+              <h4>₹25</h4>
+         <div class="counter-container">
+            <button onclick="changeQty('turmeric-milk', 'Turmeric Milk', 25, -1)">-</button>
+            <span class="quantity-count" id="turmeric-milk-count">0</span>
+            <button onclick="changeQty('turmeric-milk', 'Turmeric Milk', 25, 1); updateOrder('Turmeric Milk', 25, 1); addToCartAnimation(this);">+</button>
+          </div>   
+        </a>
+        <a class="card" id="chocolate" href="#chocolate">
+              <img src="../images/chocolateMilk 1.png" alt="ChocolateMilk">
+              <h3>Chocolate Milk</h3>
+              <h4>₹40</h4>
+         <div class="counter-container">
+            <button onclick="changeQty('chocolate-milk', 'Chocolate Milk', 40, -1)">-</button>
+            <span class="quantity-count" id="chocolate-milk-count">0</span>
+            <button onclick="changeQty('chocolate-milk', 'Chocolate Milk', 40, 1); updateOrder('Chocolate Milk', 40, 1); addToCartAnimation(this);">+</button>
+          </div>   
+        </a>
+        <a class="card" id="masala" href="#masala">
+              <img src="../images/masala 1.png" alt="MasalaMilk">
+              <h3>Masala Milk</h3>
+              <h4>₹30</h4>
+         <div class="counter-container">
+            <button onclick="changeQty('masala-milk', 'Masala Milk', 30, -1)">-</button>
+            <span class="quantity-count" id="masala-milk-count">0</span>
+            <button onclick="changeQty('masala-milk', 'Masala Milk', 30, 1); updateOrder('Masala Milk', 30, 1); addToCartAnimation(this);">+</button>
+          </div>   
+        </a>
+    </div>
+
+ </section>
+      <div class="back-menu-strip">
+          <div class="backButton">
+              <a href="menu.html">Back to Menu</a>
+          </div>
+      </div>
+
+      <div id="cart-strip" class="cart-strip">
+      <span id="cart-info">0 Items added</span>
+      <button onclick="location.href='orders.html'">Proceed to Order ➔</button>
+      </div>
+
+
+ <footer>
+  <div class="footer">
+    <div class="footerAbout">
+      <h3><img src="../images/TeaShop_Logo.png" alt="Iraivi Tea House"> </h3>
+      <p>Freshly brewed happiness, everyday!</p>
+    </div>
+    <div class="footeContact">
+      <h4>Contact Us</h4>
+      <p>📍 Madurai, Tamil Nadu</p>
+      <p>📞 +91 93454 .....</p>
+      <p>✉️ iraivi@gmail.com</p>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Twitter</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Iraivi Tea House. All rights reserved.</p>
+  </div>
+</footer>
+
+      <script src="../js/config.js"></script>
+      <script src="../js/script.js"></script>
+ </body>
+</html>

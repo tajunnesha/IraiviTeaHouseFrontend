@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Varieties</title>
+    <link rel="icon" type="image/png" href="../images/cup-of-coffee.png" width="100" height="auto">
+    <link rel="stylesheet" href="../css/teashop.css">
+
+    
+</head>
+<body>
+ 
+    <header>
+        <div>
+            <img src="../images/TeaShop_Logo.png" alt="" style="position: relative;
+            bottom: 10px; left:40px;">
+            <h2 style="position: relative; bottom: 15px;">Iraivi </h2>
+            <h4 style="position: relative; top: 10px; left: -70px;">Tea House</h4>
+            
+        </div>
+    <nav>
+        <a id="one" href="../index.html">Home</a>
+        <a id="one" href= "about.html">About Us</a>
+        <a id="one" class="menuStyle" href="menu.html">Menu</a>
+        <a id="one" href="orders.html">Orders</a>
+
+        <button><a href="hiring.html">Hiring</a></button>
+       
+    </nav>
+    </header>
+
+         <!-- section 4 -->
+    <section id="teaVarieties">
+        <div class="tea">
+            <span>༺━━━━━━━━━ Tea Varieties ━━━━━━━━━༻</span>
+            <a class="card" id="kulhadC" href="#kulhad">
+                <img src="../images/kulhadchai.jpeg" alt="kulhad">
+                <h3>Kulhad Chai</h3>
+                <p>Earthen cup Soulful sip</p>
+                <h4>₹20</h4>
+              <div class="counter-container">
+                <button onclick="changeQty('kulhad-chai', 'Kulhad Chai', 20, -1)">-</button>
+                <span class="quantity-count" id="kulhad-chai-count">0</span>
+                <button onclick="changeQty('kulhad-chai', 'Kulhad Chai', 20, 1); updateOrder('Kulhad Chai', 20, 1); addToCartAnimation(this);">+</button>
+              </div>      
+            </a>         
+              <a class="card" id="masalaC" href="#masala">
+                <img src="../images/masalachai.png" alt="masala">
+                <h3>Masala Chai</h3>
+                <p>Spice up your soul</p>
+                <h4>₹25</h4>
+              <div class="counter-container">
+                <button onclick="changeQty('masala-chai', 'Masala Chai', 25, -1)">-</button>
+                <span class="quantity-count" id="masala-chai-count">0</span>
+                <button onclick="changeQty('masala-chai', 'Masala Chai', 25, 1); updateOrder('Masala Chai', 25, 1); addToCartAnimation(this);">+</button>
+              </div>             
+            </a>
+            <a class="card" id="blackT" href="#black">
+                <img src="../images/blackTea 1.png" alt="black">
+                <h3>Black Tea</h3>
+                <p>Bold taste, timeless tradition</p>
+                <h4>₹25</h4>
+              <div class="counter-container">
+                <button onclick="changeQty('black-tea', 'Black Tea', 25, -1)">-</button>
+                <span class="quantity-count" id="black-tea-count">0</span>
+                <button onclick="changeQty('black-tea', 'Black Tea', 25, 1); updateOrder('Black Tea', 25, 1); addToCartAnimation(this);">+</button>
+              </div>            
+            </a> 
+            <a class="card" id="greenT" href="#green">
+                <img src="../images/greenTea.png" alt="green">
+                <h3>Green Tea</h3>
+                <p>Fresh leaves, Fresh mind</p>
+                <h4>₹35</h4>
+              <div class="counter-container">
+                <button onclick="changeQty('green-tea', 'Green Tea', 35, -1)">-</button>
+                <span class="quantity-count" id="green-tea-count">0</span>
+                <button onclick="changeQty('green-tea', 'Green Tea', 35, 1); updateOrder('Green Tea', 35, 1); addToCartAnimation(this);">+</button>
+              </div>            
+            </a>     
+   
+            <a class="card" id="hibiscuisT" href="#hibiscuis">
+                <img src="../images/hibiscuis 1.png" alt="hibiscuis">
+                <h3>Hibiscuis Tea</h3>
+                <p>Bloom in every sip</p>
+                <h4>₹50</h4>
+              <div class="counter-container">
+                <button onclick="changeQty('hibiscuis-tea', 'Hibiscuis Tea', 50, -1)">-</button>
+                <span class="quantity-count" id="hibiscuis-tea-count">0</span>
+                <button onclick="changeQty('hibiscuis-tea', 'Hibiscuis Tea', 50, 1); updateOrder('Hibiscuis Tea', 50, 1); addToCartAnimation(this);">+</button>
+              </div>              
+            </a>  
+            <a class="card" id="herbalT" href="#herbal">
+                <img src="../images/herbalTea 1.png" alt="herbal">
+                <h3>Herbal Tea</h3>
+                <p>Nature's healing Brew</p>
+                <h4>₹50</h4>
+              <div class="counter-container">
+                <button onclick="changeQty('herbal-tea', 'Herbal Tea', 50, -1)">-</button>
+                <span class="quantity-count" id="herbal-tea-count">0</span>
+                <button onclick="changeQty('herbal-tea', 'Herbal Tea', 50, 1); updateOrder('Herbal Tea', 50, 1); addToCartAnimation(this);">+</button>
+              </div>             
+            </a> 
+            <a class="card" id="darjeelingT" href="#darjeeling">
+                <img src="../images/darjeeling.png" alt="darjeeling">
+                <h3>Darjeeling Tea</h3>
+                <p>The Champagne of Teas</p>
+                <h4>₹50</h4>
+              <div class="counter-container">
+                <button onclick="changeQty('darjeeling-tea', 'Darjeeling Tea', 50, -1)">-</button>
+                <span class="quantity-count" id="darjeeling-tea-count">0</span>
+                <button onclick="changeQty('darjeeling-tea', 'Darjeeling Tea', 50, 1); updateOrder('Darjeeling Tea', 50, 1); addToCartAnimation(this);">+</button>
+              </div>           
+            </a>
+            <a class="card" id="assamT" href="#assam">
+                <img src="../images/assam 1.png" alt="assam">
+                <h3>Assam Tea</h3>
+                <p>Strength in every sip</p>
+                <h4>₹60</h4>
+              <div class="counter-container">
+                <button onclick="changeQty('assam-tea', 'Assam Tea', 60, -1)">-</button>
+                <span class="quantity-count" id="assam-tea-count">0</span>
+                <button onclick="changeQty('assam-tea', 'Assam Tea', 60, 1); updateOrder('Assam Tea', 60, 1); addToCartAnimation(this);">+</button>
+              </div>            
+            </a>
+            <a class="card" id="jasmineT" href="#jasmine">
+                <img src="../images/jasmine 1.png" alt="jasmine">
+                <h3>Jasmine Tea</h3>
+                <p>A sip of fragrance</p>
+                <h4>₹90</h4>
+              <div class="counter-container">
+                <button onclick="changeQty('jasmine-tea', 'Jasmine Tea', 90, -1)">-</button>
+                <span class="quantity-count" id="jasmine-tea-count">0</span>
+                <button onclick="changeQty('jasmine-tea', 'Jasmine Tea', 90, 1); updateOrder('Jasmine Tea', 90, 1); addToCartAnimation(this);">+</button>
+              </div>            
+            </a>
+            <a class="card" id="matchaT" href="#matcha">
+                <img src="../images/matcha 1.png" alt="matcha">
+                <h3>Matcha</h3>
+                <p>Green energy in a cup</p>
+                <h4>₹200</h4>
+              <div class="counter-container">
+                <button onclick="changeQty('matcha', 'Matcha', 200, -1)">-</button>
+                <span class="quantity-count" id="matcha-count">0</span>
+                <button onclick="changeQty('matcha', 'Matcha', 200, 1); updateOrder('Matcha', 200, 1); addToCartAnimation(this);">+</button>
+              </div>            
+            </a>
+        </div>
+
+    </section>
+    <div class="back-menu-strip">
+        <div class="backButton">
+            <a href="menu.html">Back to Menu</a>
+        </div>
+    </div>
+
+      <div id="cart-strip" class="cart-strip">
+      <span id="cart-info">0 Items added</span>
+      <button onclick="location.href='orders.html'" >Proceed to Order ➔</button>
+      </div>
+
+
+<footer>
+  <div class="footer">
+    <div class="footerAbout">
+      <h3><img src="../images/TeaShop_Logo.png" alt="Iraivi Tea House"> </h3>
+      <p>Freshly brewed happiness, everyday!</p>
+    </div>
+    <div class="footeContact">
+      <h4>Contact Us</h4>
+      <p>📍 Madurai, Tamil Nadu</p>
+      <p>📞 +91 93454 .....</p>
+      <p>✉️ iraivi@gmail.com</p>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Twitter</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Iraivi Tea House. All rights reserved.</p>
+  </div>
+</footer>
+
+      <script src="../js/config.js"></script>
+      <script src="../js/script.js"></script>
+ </body>
+</html>

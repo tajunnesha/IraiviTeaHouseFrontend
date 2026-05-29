@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iraivi Tea House - Monthly Accounts</title>
+    <link rel="stylesheet" href="../css/teashop.css">
+
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../images/TeaShop_Logo.png" alt="" style="position: relative; bottom: 10px; left: 40px;">
+            <h2 style="position: relative; bottom: 15px;">Iraivi</h2>
+            <h4 style="position: relative; top: 10px; left: -70px;">Tea House</h4>
+        </div>
+        <nav>
+            <a class="homeStyle" id="one" href="../index.html">Home</a>
+            <a id="one" href="about.html">About Us</a>
+            <a id="one" href="menu.html">Menu</a>
+            <a id="one" href="orders.html">Orders</a>
+            <button><a href="hiring.html">Hiring</a></button>
+        </nav>
+    </header>
+
+    <main class="main-account-layout">
+        <div class="account-container">
+            <h2>Monthly Accounts Summary</h2>
+            
+            <div class="input-group">
+                <label for="monthInput">Select Month:</label>
+                <input type="month" id="monthInput" max="2026-12">
+                <button onclick="loadMonthlySummary()">Search</button>
+            </div>
+
+            <div id="monthly-summary">
+                </div>
+
+            <div id="category-section" style="margin-top: 20px; display: none;">
+                <h3>Category Wise Details</h3>
+                <div style="overflow-x: auto;">
+                    <table id="categoryTable" style="width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; border: 1px solid #b38b4d;">
+                        <thead>
+                            <tr style="background-color: #b38b4d; color: white;">
+                                <th style="padding: 12px; text-align: left;">Category</th>
+                                <th style="padding: 12px; text-align: right;">Income (Cr)</th>
+                                <th style="padding: 12px; text-align: right;">Expense (Dr)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="category-table-body">
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="statusMessage" style="margin-top: 15px; font-weight: bold; text-align: center;"></div>
+
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="DailyAccount.html" class="btn-back-home">
+                    <span>⬅</span> Day Book
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footerAbout">
+                <h3><img src="../images/TeaShop_Logo.png" alt="Iraivi Tea House"> </h3>
+                <p>Freshly brewed happiness, everyday!</p>
+            </div>
+            <div class="footeContact">
+                <h4>Contact Us</h4>
+                <p>📍 Madurai, Tamil Nadu</p>
+                <p>📞 +91 93454 .....</p>
+                <p>✉️ iraivi@gmail.com</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#">Facebook</a> | 
+                <a href="#">Instagram</a> | 
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Iraivi Tea House. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/monthlyScript.js"></script>
+</body>
+</html>
