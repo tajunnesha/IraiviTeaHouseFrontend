@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="images/cup-of-coffee.png" width="100" height="auto">
+    <link rel="stylesheet" href="css/teashop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    
+</head>
+<body>
+ 
+    <header>
+
+        <div>
+            <img src="images/TeaShop_Logo.png" alt="" style="position: relative;
+            bottom: 10px; left:40px;">
+            <h2 style="position: relative; bottom: 15px;">Iraivi </h2>
+            <h4 style="position: relative; top: 10px; left: -70px;">Tea House</h4>
+            
+        </div>
+    <nav>
+        <a class="homeStyle" id="one" href="
+        index.html">Home</a>
+        <a id="one" href="html/about.html">About Us</a>
+        <a id="one" href="html/menu.html">Menu</a>
+        <a id="one" href="html/orders.html">Orders</a>
+        <button><a  href="html/hiring.html">Hiring</a></button>
+
+        <div class="user-access-container">
+            <div class="profile-icon">
+                <i class="fas fa-user-circle" ></i>
+            </div>
+
+            <div id="userDropdown" class="dropdown-box">
+                <div class="arrow-up"></div>
+                <a href="html/login.html?role=user" class="dropdown-item">
+                    <i class="fas fa-user"></i> User Access
+                </a>
+                <a href="html/login.html?role=admin" class="dropdown-item">
+                    <i class="fas fa-user-shield"></i> Admin Access
+                </a>
+            </div>
+        </div>
+       
+    </nav>
+
+    </header>
+
+
+  <!-- section 1 -->
+
+    <section id="home">
+    <img src="images/WhatsApp Image 2026-03-14 at 9.03.55 PM.jpeg" width="100%" height="auto" margint-top="0%" >
+
+
+      <div class="slogan">
+          <h1>Taste the calm in every cup,<br>
+              Where warmth and flavor meet your soul.</h1>
+          <button>
+              <a href="html/menu.html">Explore menu</a>
+          </button> 
+      </div> 
+
+</section>
+
+<!-- section 2 -->
+
+<section>
+  <section class="why-choose-us">
+    <h2 class="section-title">Why Choose Us?</h2>
+    <div class="usp-container">
+        <div class="usp-card">
+            <div class="usp-icon">🍃</div>
+            <h3>100% Organic</h3>
+            <p>Direct-ah tea estates-la irundhu fresh-ah edukira leaves mattumae use panrom.</p>
+        </div>
+        <div class="usp-card">
+            <div class="usp-icon">☕</div>
+            <h3>Masterly Brewed</h3>
+            <p>Ovvoru cup-um traditional method-la perfect temperature-la brew pannapadudhu.</p>
+        </div>
+        <div class="usp-card">
+            <div class="usp-icon">✨</div>
+            <h3>Cozy Ambience</h3>
+            <p>Unga break-ah relax-ah mathuradhukku oru nalla environment tharrom.</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2 class="section-title">Customer Voices</h2>
+    <div id="reviews-container" class="reviews-grid">
+        <div class="review-card">
+            <p class="review-text">"Best Kulhad Chai in Madurai! Experience romba nalla irundhadhu."</p>
+            <h4 class="customer-name">- Rajesh Kumar</h4>
+        </div>
+        <div class="review-card">
+            <p class="review-text">"Hibiscus tea must try! Health and taste renduமே super."</p>
+            <h4 class="customer-name">- Meera</h4>
+        </div>
+    </div>
+
+    <div class="add-review">
+        <h3>Share your experience</h3>
+        <input type="text" id="custName" placeholder="Your Name">
+        <textarea id="custReview" placeholder="Your Feedback"></textarea>
+        <button onclick="submitReview()" class="submit-btn">Submit Review</button>
+
+        <div id="statusMsg" style="min-height: 20px; margin-top: 10px; font-weight: bold;"></div>    
+    </div>
+  </section>
+</section>
+
+<!-- section 3 -->
+
+<section class="gallery-section">
+    <h2 class="section-title">Explore Our Gallery</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="images/galleryTea 1.png" alt="Tea Preparation">
+            <div class="overlay"><span>Fresh Brew</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/cozyCorner 1.png" alt="Shop Ambience">
+            <div class="overlay"><span>Cozy Corner</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/kulhad 1.png" alt="Kulhad Chai">
+            <div class="overlay"><span>Traditional Taste</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/galleryLeaves 1.png" alt="Organic Leaves">
+            <div class="overlay"><span>100% Organic</span></div>
+        </div>
+        <div class="gallery-item">
+            <video autoplay muted loop playsinline class="bg-video">
+                <source src="images/teaVideo.mp4" type="video/mp4">
+            </video>
+        <div class="gallery-overlay">Tea in Motion</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/brew 1.png" alt="Tea Preparation">
+            <div class="overlay"><span>Fresh Brew</span></div>
+        </div>
+</section>
+
+
+<footer>
+  <div class="footer">
+    <div class="footerAbout">
+      <h3><img src="images/TeaShop_Logo.png" alt="Iraivi Tea House"> </h3>
+      <p>Freshly brewed happiness, everyday!</p>
+    </div>
+    <div class="footeContact">
+      <h4>Contact Us</h4>
+      <p>📍 Madurai, Tamil Nadu</p>
+      <p>📞 +91 93454 .....</p>
+      <p>✉️ iraivi@gmail.com</p>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Twitter</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Iraivi Tea House. All rights reserved.</p>
+  </div>
+</footer>
+
+  <script src="js/submitReview.js"></script>
+
+</body>
+</html>
